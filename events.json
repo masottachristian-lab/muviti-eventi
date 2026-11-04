@@ -1,6 +1,40 @@
 {
-  "updatedAt": "2026-11-04T22:31:42.524551+01:00",
-  "automaticSourcesActive": false,
+  "updatedAt": "2026-11-04T22:40:37.223606+01:00",
+  "automaticSourcesActive": true,
+  "sources": [
+    {
+      "id": "acireale",
+      "name": "Comune di Acireale",
+      "calendar": "https://www.comune.acireale.ct.it/it/events",
+      "permissionUrl": "https://www.comune.acireale.ct.it/it/legal_notices",
+      "status": "ok",
+      "count": 1
+    },
+    {
+      "id": "gravina",
+      "name": "Comune di Gravina di Catania",
+      "calendar": "https://www.comune.gravina-di-catania.ct.it/it/events",
+      "permissionUrl": "https://www.comune.gravina-di-catania.ct.it/it/legal_notices",
+      "status": "ok",
+      "count": 1
+    },
+    {
+      "id": "mascalucia",
+      "name": "Comune di Mascalucia",
+      "calendar": "https://www.comune.mascalucia.ct.it/it/events",
+      "permissionUrl": "https://www.comune.mascalucia.ct.it/it/legal_notices",
+      "status": "ok",
+      "count": 1
+    },
+    {
+      "id": "metropolitana",
+      "name": "Città Metropolitana di Catania",
+      "calendar": "https://www.cittametropolitana.ct.it/it/events",
+      "permissionUrl": "https://www.cittametropolitana.ct.it/it/legal_notices",
+      "status": "ok",
+      "count": 0
+    }
+  ],
   "events": [
     {
       "id": "atmosfera-2026-11-08",
@@ -14,6 +48,51 @@
       "priceNote": "18 € studenti universitari e under 19 · Prenotazione richiesta",
       "source": "CataniaToday",
       "url": "https://www.cataniatoday.it/eventi/set-acustico-claudio-covato-benedettini-novembre-2026.html"
+    },
+    {
+      "id": "acireale-42b80770d80bd094",
+      "title": "Festa del Compatrono San Sebastiano",
+      "category": "Cultura e mostre",
+      "date": "2027-01-20",
+      "time": "04:00",
+      "venue": "Basilica Collegiata di San Sebastiano",
+      "address": "Piazza Leonardo Vigo, 95024 Acireale CT, Italia",
+      "price": 0,
+      "source": "Comune di Acireale",
+      "url": "https://www.comune.acireale.ct.it/it/events/festa-del-compatrono-san-sebastiano",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "endDate": "2027-01-20"
+    },
+    {
+      "id": "gravina-f9af083680a60913",
+      "title": "Festaggiamenti in onore del Santo Patrono",
+      "category": "Cultura e mostre",
+      "date": "2027-06-01",
+      "time": "07:00",
+      "venue": "Chiesa Madre - Sant'Antonio di Padova",
+      "address": "Via Etnea, 392",
+      "price": 0,
+      "source": "Comune di Gravina di Catania",
+      "url": "https://www.comune.gravina-di-catania.ct.it/it/events/festa-del-santo-patrono-sant-antonio-da-padova",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "endDate": "2027-06-13"
+    },
+    {
+      "id": "mascalucia-ffa7d36d4faef762",
+      "title": "Festa di San Vito",
+      "category": "Cultura e mostre",
+      "date": "2027-06-15",
+      "time": "06:00",
+      "venue": "Chiesa di San Vito",
+      "address": "Corso S. Vito, 1, 95030 Mascalucia CT, Italia",
+      "price": 0,
+      "source": "Comune di Mascalucia",
+      "url": "https://www.comune.mascalucia.ct.it/it/events/festa-del-santo-patrono-san-vito",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "endDate": "2027-06-15"
     }
   ]
 }
