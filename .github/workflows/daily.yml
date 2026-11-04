@@ -6,7 +6,7 @@ on:
   issues:
     types: [opened, edited, reopened, closed]
   push:
-    paths: [manual.json, update.py]
+    paths: [manual.json, update.py, collect.py, sources.json, requirements.txt, test_collect.py, '.github/workflows/daily.yml']
 permissions:
   contents: write
   issues: read
@@ -17,12 +17,16 @@ jobs:
   aggiorna:
     if: github.event_name != 'issues' || github.event.issue.user.login == github.repository_owner
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Aggiorna elenco
+      - name: Installa lettore HTML
+        run: python3 -m pip install -r requirements.txt
+      - name: Verifica regole eventi
+        run: python3 -m unittest discover -p 'test_*.py'
+      - name: Cerca nuovi eventi e aggiorna elenco
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 update.py
