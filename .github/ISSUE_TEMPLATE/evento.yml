@@ -1,0 +1,58 @@
+name: Aggiungi evento a Muviti
+description: Solo gli eventi inviati dal proprietario saranno pubblicati. I dati inseriti sono pubblici.
+title: 'Evento: '
+body:
+  - type: input
+    id: nome
+    attributes:
+      label: Nome evento
+    validations:
+      required: true
+  - type: dropdown
+    id: categoria
+    attributes:
+      label: Categoria
+      options: [Concerti, Cultura e mostre, Fiere, Serate]
+    validations:
+      required: true
+  - type: input
+    id: data
+    attributes:
+      label: Data
+      placeholder: '2026-11-08'
+    validations:
+      required: true
+  - type: input
+    id: orario
+    attributes:
+      label: Orario
+      placeholder: '20:30'
+  - type: input
+    id: luogo
+    attributes:
+      label: Luogo
+    validations:
+      required: true
+  - type: input
+    id: indirizzo
+    attributes:
+      label: Indirizzo completo
+      placeholder: 'Piazza Dante 32, Catania'
+    validations:
+      required: true
+  - type: input
+    id: prezzo
+    attributes:
+      label: Prezzo in euro
+      description: '0 se gratuito, vuoto se sconosciuto.'
+  - type: input
+    id: nota
+    attributes:
+      label: Nota prezzo
+  - type: input
+    id: fonte
+    attributes:
+      label: Fonte o sito organizzatore
+      placeholder: 'https://...'
+    validations:
+      required: true

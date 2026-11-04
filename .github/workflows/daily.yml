@@ -1,0 +1,42 @@
+name: Aggiorna bacheca eventi
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+  issues:
+    types: [opened, edited, reopened, closed]
+  push:
+    paths: [manual.json, update.py]
+permissions:
+  contents: write
+  issues: read
+concurrency:
+  group: eventi
+  cancel-in-progress: false
+jobs:
+  aggiorna:
+    if: github.event_name != 'issues' || github.event.issue.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Aggiorna elenco
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 update.py
+      - name: Pubblica archivio
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import base64, json, os, urllib.request
+          url='https://api.github.com/repos/'+os.environ['GITHUB_REPOSITORY']+'/contents/events.json'
+          headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN'],'Accept':'application/vnd.github+json','User-Agent':'Muviti-events'}
+          old=json.load(urllib.request.urlopen(urllib.request.Request(url,headers=headers),timeout=30))
+          content=open('events.json','rb').read()
+          if base64.b64decode(old['content'])!=content:
+              body=json.dumps({'message':'Aggiorna eventi','sha':old['sha'],'content':base64.b64encode(content).decode(),'branch':'main'}).encode()
+              urllib.request.urlopen(urllib.request.Request(url,data=body,headers=headers,method='PUT'),timeout=30).close()
+          PY
