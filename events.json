@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T19:07:11.309830+01:00",
+  "updatedAt": "2026-11-05T19:07:37.139405+01:00",
   "automaticSourcesActive": true,
   "sources": [
     {
@@ -36,6 +36,18 @@
     }
   ],
   "events": [
+    {
+      "id": "manual-2",
+      "title": "Maison3",
+      "date": "2026-11-05",
+      "time": "23:00",
+      "category": "Serate",
+      "venue": "CULTO",
+      "address": "Via scuto costarelli 32",
+      "price": null,
+      "source": "Inserito dal proprietario",
+      "url": "https://muviti.lovable.app"
+    },
     {
       "id": "atmosfera-2026-11-08",
       "title": "ATMOSFERA · Claudio Covato",
