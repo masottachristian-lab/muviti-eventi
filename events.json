@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T07:00:29.805913+01:00",
+  "updatedAt": "2026-11-09T07:21:56.445562+01:00",
   "automaticSourcesActive": true,
   "sources": [
     {
@@ -35,19 +35,5 @@
       "count": 0
     }
   ],
-  "events": [
-    {
-      "id": "atmosfera-2026-11-08",
-      "title": "ATMOSFERA · Claudio Covato",
-      "category": "Concerti",
-      "date": "2026-11-08",
-      "time": "20:30",
-      "venue": "Monastero dei Benedettini",
-      "address": "Piazza Dante Alighieri 32, Catania",
-      "price": 20,
-      "priceNote": "18 € studenti universitari e under 19 · Prenotazione richiesta",
-      "source": "CataniaToday",
-      "url": "https://www.cataniatoday.it/eventi/set-acustico-claudio-covato-benedettini-novembre-2026.html"
-    }
-  ]
+  "events": []
 }
