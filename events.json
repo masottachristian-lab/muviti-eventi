@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T07:13:24.414566+01:00",
+  "updatedAt": "2026-11-12T07:17:25.679320+01:00",
   "automaticSourcesActive": true,
   "sources": [
     {
@@ -7,7 +7,7 @@
       "name": "Comune di Acireale",
       "calendar": "https://www.comune.acireale.ct.it/it/events",
       "permissionUrl": "https://www.comune.acireale.ct.it/it/legal_notices",
-      "status": "error",
+      "status": "ok",
       "count": 0
     },
     {
@@ -15,7 +15,7 @@
       "name": "Comune di Gravina di Catania",
       "calendar": "https://www.comune.gravina-di-catania.ct.it/it/events",
       "permissionUrl": "https://www.comune.gravina-di-catania.ct.it/it/legal_notices",
-      "status": "error",
+      "status": "ok",
       "count": 0
     },
     {
@@ -23,7 +23,7 @@
       "name": "Comune di Mascalucia",
       "calendar": "https://www.comune.mascalucia.ct.it/it/events",
       "permissionUrl": "https://www.comune.mascalucia.ct.it/it/legal_notices",
-      "status": "error",
+      "status": "ok",
       "count": 0
     },
     {
