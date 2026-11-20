@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T07:16:53.697568+01:00",
+  "updatedAt": "2026-11-20T07:20:15.333695+01:00",
   "automaticSourcesActive": true,
   "sources": [
     {
@@ -7,7 +7,7 @@
       "name": "Comune di Acireale",
       "calendar": "https://www.comune.acireale.ct.it/it/events",
       "permissionUrl": "https://www.comune.acireale.ct.it/it/legal_notices",
-      "status": "ok",
+      "status": "error",
       "count": 0
     },
     {
@@ -15,7 +15,7 @@
       "name": "Comune di Gravina di Catania",
       "calendar": "https://www.comune.gravina-di-catania.ct.it/it/events",
       "permissionUrl": "https://www.comune.gravina-di-catania.ct.it/it/legal_notices",
-      "status": "ok",
+      "status": "error",
       "count": 0
     },
     {
@@ -31,7 +31,7 @@
       "name": "Città Metropolitana di Catania",
       "calendar": "https://www.cittametropolitana.ct.it/it/events",
       "permissionUrl": "https://www.cittametropolitana.ct.it/it/legal_notices",
-      "status": "ok",
+      "status": "error",
       "count": 0
     }
   ],
